@@ -5,6 +5,7 @@
              xmlns:viewModels="clr-namespace:Discord.Video.Trimmer.ViewModels"
              x:DataType="viewModels:MainViewModel"
              x:Class="Discord.Video.Trimmer.MainPageView">
+             x:Class="Discord.Video.Trimmer.Views.MainPageView">
 
     <ScrollView>
         <VerticalStackLayout

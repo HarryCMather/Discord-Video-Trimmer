@@ -1,6 +1,6 @@
 ﻿using Discord.Video.Trimmer.ViewModels;
 
-namespace Discord.Video.Trimmer;
+namespace Discord.Video.Trimmer.Views;
 
 public partial class MainPageView : ContentPage
 {

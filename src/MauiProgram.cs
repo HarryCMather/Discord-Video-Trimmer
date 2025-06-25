@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Maui;
 using Discord.Video.Trimmer.ViewModels;
+using Discord.Video.Trimmer.Views;
 using Microsoft.Extensions.Logging;
 
 namespace Discord.Video.Trimmer;
