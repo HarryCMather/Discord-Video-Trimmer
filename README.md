@@ -1,4 +1,5 @@
 # Discord-Video-Trimmer
+### Note: This project is still in-development and is not yet feature complete.
 A cross-platform tool for trimming and compressing clips, designed for use with Discord due to its restrictive file size limits of 10MB.
 This causes issues, as most PC recording software can easily exceed this file size limit with a few seconds of footage.
 The project has been tested on macOS and Windows machines.
