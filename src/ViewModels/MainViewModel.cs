@@ -12,6 +12,9 @@ public partial class MainViewModel : ObservableObject
 
     [ObservableProperty]
     private string progressText = string.Empty;
+
+    [ObservableProperty]
+    private bool isSampleCheckboxChecked;
     
     [RelayCommand]
     private void UpdateProgress()

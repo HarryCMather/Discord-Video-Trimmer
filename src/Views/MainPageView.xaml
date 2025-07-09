@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:viewModels="clr-namespace:Discord.Video.Trimmer.ViewModels"
+             xmlns:components="clr-namespace:Discord.Video.Trimmer.Views.Components"
              x:DataType="viewModels:MainViewModel"
              x:Class="Discord.Video.Trimmer.Views.MainPageView">
 
@@ -10,6 +11,24 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
+            
+            <!-- Using the following ConditionalContentView as an example, for now.
+                 I will change this in subsequent PRs to do things such as:
+                  - Only rendering the MediaElement when a valid video is selected. -->
+            <Label Text="Sample checkbox to test conditional rendering works as intended:" />
+            <CheckBox IsChecked="{Binding IsSampleCheckboxChecked}" />
+            <components:ConditionalContentView 
+                Margin="0,20,0,20"
+                Condition="{Binding IsSampleCheckboxChecked}">
+                <components:ConditionalContentView.True>
+                    <Label Text="You have selected the checkbox!"/>
+                </components:ConditionalContentView.True>
+                    
+                <components:ConditionalContentView.False>
+                    <Label Text="You have NOT selected the checkbox!"/>
+                </components:ConditionalContentView.False>
+            </components:ConditionalContentView>
+            
             
             <!-- TODO: CHECK HOW THESE VALUES CAN BE RETRIEVED FROM THE SELECTED VIDEO FILES!
                  ALSO, IT APPEARS "Source" CAN BE LOCAL, OR REMOTE.
@@ -20,8 +39,7 @@
             <toolkit:MediaElement
                 Source="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
                 Aspect="AspectFit"
-                HorizontalOptions="FillAndExpand"
-                />
+                HorizontalOptions="FillAndExpand" />
             
             <!-- <Image -->
             <!--     Source="dotnet_bot.png" -->
