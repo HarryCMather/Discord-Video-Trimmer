@@ -4,13 +4,25 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:viewModels="clr-namespace:Discord.Video.Trimmer.ViewModels"
              x:DataType="viewModels:MainViewModel"
-             x:Class="Discord.Video.Trimmer.MainPageView">
              x:Class="Discord.Video.Trimmer.Views.MainPageView">
 
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
+            
+            <!-- TODO: CHECK HOW THESE VALUES CAN BE RETRIEVED FROM THE SELECTED VIDEO FILES!
+                 ALSO, IT APPEARS "Source" CAN BE LOCAL, OR REMOTE.
+                 I'VE GRABBED THE EXAMPLE SOURCE FROM THE DOCS/EXAMPLES FOR NOW UNTIL I GET EVERYTHING WIRED UP. -->
+            <!-- From within the MediaElement block, shouldn't be needed: -->
+            <!-- WidthRequest="1500" -->
+            <!-- HeightRequest="844" -->
+            <toolkit:MediaElement
+                Source="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                Aspect="AspectFit"
+                HorizontalOptions="FillAndExpand"
+                />
+            
             <!-- <Image -->
             <!--     Source="dotnet_bot.png" -->
             <!--     HeightRequest="185" -->
