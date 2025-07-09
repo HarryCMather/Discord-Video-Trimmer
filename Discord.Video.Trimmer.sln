@@ -6,6 +6,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8861A588-8B8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A2390892-6944-473B-88A3-387F31A708EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discord.Video.Trimmer.Unit.Tests", "test\Discord.Video.Trimmer.Unit.Tests\Discord.Video.Trimmer.Unit.Tests.csproj", "{F101B63B-8C9B-4BF9-B780-6AC1BCFA738A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,8 +18,13 @@ Global
 		{877AF549-B502-4946-8820-CEBA66CE7ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{877AF549-B502-4946-8820-CEBA66CE7ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{877AF549-B502-4946-8820-CEBA66CE7ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F101B63B-8C9B-4BF9-B780-6AC1BCFA738A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F101B63B-8C9B-4BF9-B780-6AC1BCFA738A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F101B63B-8C9B-4BF9-B780-6AC1BCFA738A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F101B63B-8C9B-4BF9-B780-6AC1BCFA738A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{877AF549-B502-4946-8820-CEBA66CE7ED7} = {8861A588-8B82-4C30-A1F9-307E7CEF36A7}
+		{F101B63B-8C9B-4BF9-B780-6AC1BCFA738A} = {A2390892-6944-473B-88A3-387F31A708EC}
 	EndGlobalSection
 EndGlobal
